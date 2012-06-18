@@ -2,9 +2,11 @@ modules = {
 
     'app' {
         dependsOn 'bootstrap'
+        resource url: 'css/main.css'
 
     }
     'bootstrap' {
+        dependsOn 'jquery', 'jquery-ui'
         defaultBundle 'core'
         resource url: 'js/bootstrap/css/bootstrap.css'
         resource url: 'js/bootstrap/css/bootstrap-responsive.css'

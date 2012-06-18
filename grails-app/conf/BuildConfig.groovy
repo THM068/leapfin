@@ -31,5 +31,6 @@ grails.project.dependency.resolution = {
 
     plugins {
         runtime ":resources:1.0.2"
+        compile ":jquery-ui:1.8.15"
     }
 }
