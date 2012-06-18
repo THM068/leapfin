@@ -1,7 +1,7 @@
 dataSource {
     grails {
         mongo {
-            host = "LOCALHOSR"
+            host = "localhost"
             port = 27107
             username = "leapfin"
             password = "lionel22"
