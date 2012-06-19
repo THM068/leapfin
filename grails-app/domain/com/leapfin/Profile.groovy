@@ -6,7 +6,7 @@ class Profile {
     String backgroundInfo
 
     static constraints = {
-        name(twitter: true)
-        name(backgroundInfo: true, maxSize: 100000)
+        twitter(twitter: true, nullable: true)
+        backgroundInfo(maxSize: 100000, nullable: true)
     }
 }

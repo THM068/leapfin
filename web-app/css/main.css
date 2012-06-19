@@ -1,3 +1,11 @@
+.form_row label {
+  display: inline;
+  float: left;
+  width: 100px;
+}
+.form_row input {
+  width: 300px;
+}
 body {
   background: #f3f1ec;
   font-family: "Lucida Grande", "Lucida Sans Unicode", helvetica, arial, verdana, sans-serif;
