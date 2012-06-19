@@ -7,6 +7,24 @@ grails.project.dependency.resolution = {
     inherits("global") {
         // uncomment to disable ehcache
         // excludes 'ehcache'
+        excludes 'org.springframework.test'
+        excludes 'org.springframework.core'
+        excludes 'org.springframework.aop'
+        excludes 'org.springframework.aspects'
+        excludes 'org.springframework.asm'
+        excludes 'org.springframework.beans'
+        excludes 'org.springframework.context'
+        excludes 'org.springframework.context-support'
+        excludes 'org.springframework.expression'
+        excludes 'org.springframework.instrument'
+        excludes 'org.springframework.jdbc'
+        excludes 'org.springframework.jms'
+        excludes 'org.springframework.orm'
+        excludes 'org.springframework.oxm'
+        excludes 'org.springframework.tx'
+        excludes 'org.springframework.web'
+        excludes 'org.springframework.webmvc'
+
     }
     log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     repositories {
@@ -27,10 +45,64 @@ grails.project.dependency.resolution = {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
         // runtime 'mysql:mysql-connector-java:5.1.13'
+        build([group: 'org.springframework', name: 'spring-test', version: '3.0.7.RELEASE'])
+
+        compile([group: 'org.springframework', name: 'spring-core', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-aop', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-aspects', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-asm', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-beans', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-context', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-context-support', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-expression', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-instrument', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-jdbc', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-jms', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-orm', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-oxm', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-tx', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-web', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-webmvc', version: '3.0.7.RELEASE'])
+
+        runtime([group: 'org.springframework', name: 'spring-core', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-aop', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-aspects', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-asm', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-beans', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-context', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-context-support', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-expression', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-instrument', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-jdbc', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-jms', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-orm', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-oxm', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-tx', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-web', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-webmvc', version: '3.0.7.RELEASE'])
+
+        test([group: 'org.springframework', name: 'spring-core', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-aop', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-aspects', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-asm', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-beans', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-context', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-context-support', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-expression', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-instrument', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-jdbc', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-jms', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-orm', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-oxm', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-tx', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-web', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-webmvc', version: '3.0.7.RELEASE'],
+                [group: 'org.springframework', name: 'spring-test', version: '3.0.7.RELEASE'])
     }
 
     plugins {
         runtime ":resources:1.0.2"
         compile ":jquery-ui:1.8.15"
+//        compile ":mongodb:1.0.0.GA"
     }
 }
