@@ -34,9 +34,14 @@
             <div class="form_row">
                 <input type="submit" value="Add Person" />
             </div>
+            %{--<div class="form_row">--}%
+                %{--<label for="title">Title</label>--}%
+                %{--<div class="blank_slate"> Add a title</div>--}%
+                %{--<div class="contact_method">--}%
+                    %{--<input type="text" name="title"/>--}%
+                %{--</div>--}%
+            %{--</div>--}%
         </g:form>
-
-
     </div>
 </div>
 

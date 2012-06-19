@@ -4,6 +4,9 @@ modules = {
         dependsOn 'bootstrap'
         resource url: 'css/main.css'
 
+        resource url: 'js/contact/operations.js'
+
+
     }
     'bootstrap' {
         dependsOn 'jquery', 'jquery-ui'

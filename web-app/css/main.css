@@ -6,6 +6,16 @@
 .form_row input {
   width: 300px;
 }
+.form_row .contact_method {
+  margin-left: 100px;
+}
+.blank_slate {
+  color: #999999;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 4px 0 5px;
+  padding: 1px;
+}
 body {
   background: #f3f1ec;
   font-family: "Lucida Grande", "Lucida Sans Unicode", helvetica, arial, verdana, sans-serif;
