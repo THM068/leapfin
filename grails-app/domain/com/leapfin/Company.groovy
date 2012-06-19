@@ -1,13 +1,9 @@
 package com.leapfin
 
-class Company {
+class Company extends Profile {
     String name
-    String twitter
-    String backgroundInfo
 
     static constraints = {
         name(nullable: true)
-        name(twitter: true)
-        name(backgroundInfo: true, maxSize: 100000)
     }
 }
