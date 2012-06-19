@@ -3,7 +3,7 @@
   float: left;
   width: 100px;
 }
-.form_row input {
+.form_row input[type="text"] {
   width: 300px;
 }
 .form_row .contact_method {
