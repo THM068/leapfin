@@ -5,7 +5,7 @@
 </head>
 
 <body>
-<div id="main-content" class="well span7">
+<div id="main-content" class="well span7 form-bg">
     <div id="page_header">
         <h4>Add a new person</h4>
     </div>
@@ -13,34 +13,31 @@
         <g:form controller="contact" action="addPerson" method="POST">
             <div class="form_row">
                 <label for="firstName">First Name</label>
-                <g:textField name="firstName"/>
+                <g:textField name="firstName" placeholder="Add a first name"/>
             </div>
 
             <div class="form_row">
                 <label for="lastName">Last Name</label>
-                <g:textField name="lastName"/>
+                <g:textField name="lastName" placeholder="Add a last name"/>
             </div>
 
             <div class="form_row">
                 <label for="title">Title</label>
-                <input type="text" name="title"/>
+                <g:textField name="title" placeholder="Add a title"/>
             </div>
 
             <div class="form_row">
                 <label for="companyName">Company</label>
-                <input type="text" name="companyName"/>
+                <g:textField name="companyName" placeholder="Add a company"/>
             </div>
+            <hr>
+            <g:render template="/parts/contactForm" />
 
+            <hr>
             <div class="form_row">
-                <input type="submit" value="Add Person" />
+                <input id="addPersonBtn" type="submit" value="Add Person" />
+
             </div>
-            %{--<div class="form_row">--}%
-                %{--<label for="title">Title</label>--}%
-                %{--<div class="blank_slate"> Add a title</div>--}%
-                %{--<div class="contact_method">--}%
-                    %{--<input type="text" name="title"/>--}%
-                %{--</div>--}%
-            %{--</div>--}%
         </g:form>
     </div>
 </div>

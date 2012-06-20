@@ -2,6 +2,7 @@
 @import "forms.less";
 
 body {
+    /*background: url("../images/header_bg_light_blue.jpg") repeat-y scroll center top #172F41;*/
     background: @gray;
     font-family: "Lucida Grande","Lucida Sans Unicode",helvetica,arial,verdana,sans-serif;
     text-align: left;
@@ -10,15 +11,24 @@ body {
 #header {
     .navbar-inner {
         border-radius: 0;
+        background-image: url("../images/featured_bg.gif");
+        background-repeat: repeat-x;
+    }
+
+    .cotton-top {
+        background: url("../images/featured_top_bg.gif") repeat-x scroll 0 0 transparent;
+        height: 15px;
     }
 }
-
+.space-buttons {
+    margin: 0 10px 0 115px !important;
+}
 #left-nav {
     margin-right: 10px;
 
     .well {
         padding: 19px 0;
-        background: @gray;
+        background: transparent;
         border: 0px solid @gray;
         border-radius: 0;
         box-shadow: 0 0 0 rgba(0, 0, 0, 0.05) inset;
@@ -26,9 +36,33 @@ body {
 }
 #left-nav.span3 {
     width: 210px;
-
 }
 
 #main-content {
     margin-left: -10px;
 }
+ .icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+ }
+ .icon-contact {
+    background-position: -168px 0;
+}
+
+
+.icon-task {
+    background-position: -288px 0;
+}
+.icon-cases {
+
+}
+.icon-deals {
+    background-position: 0 -48px;
+}
+.icon-activity {
+    background-position: -336px -120px;
+}
+
+
+
